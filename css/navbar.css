@@ -132,6 +132,10 @@
         user-select: none;
     }
 
+    .navbar-links.active{
+        display: flex;
+    }
+
     .navbar-links ul{
         flex-direction: column;
         width: 100%;
@@ -139,15 +143,13 @@
 
     .navbar-links ul li{
         text-align: center;
+        user-select: none;
     }
 
     .navbar-links ul li a{
         padding: 0.7rem 0rem;
     }
 
-    .navbar-links.active{
-        display: flex;
-    }
 }
 
 @media screen and (max-width: 650px){

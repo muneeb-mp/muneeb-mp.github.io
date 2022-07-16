@@ -9,3 +9,11 @@ const navMenu = document.getElementsByClassName('hamburger-button')[0];
 navMenu.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
 })
+
+
+// Close navbar menu when clicked on an list item
+document.addEventListener('click', (e)=>{
+    if(e.target.closest(".navbar-links")){
+        navbarLinks.classList.toggle('active');
+    }
+});

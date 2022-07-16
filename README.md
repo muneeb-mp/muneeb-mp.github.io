@@ -5,3 +5,11 @@ My Portfolio Website fully custom made with HTML, CSS, JavaScript.
 - Fully Responsive design for all types of devices.
 - Fully Custom design made by myself.
 - Hamburger menu for mobiles and tablets.
+
+
+v1.01 changelog -
+- Adjusted the position of navbar menu (hamburger) on mobile devices.
+- Added more responsiveness to the website.
+
+v1.02 changelog -
+- Mobile navbar will close automatically now on clicking the navbar menu items.
