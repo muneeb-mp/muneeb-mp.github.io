@@ -78,10 +78,37 @@
     border-radius: 20px;
 }
 
+@media screen and (max-width: 1360px){
+    .navbar-links ul li a{
+        padding: 1em;
+    }
+}
+
 @media screen and (max-width: 1160px){
     .navbar-links ul li a{
         padding: 0.8em;
     }
+}
+
+@media screen and (max-width: 1000px){
+    .logo{
+        font-size: 1.2rem;
+        margin: 0.6rem 0.6rem 0.6rem 1rem;
+    }
+
+    .navbar-links ul{
+        margin-right: 1.5em;
+    }
+
+    .navbar-links ul li a{
+        padding: 0.4em;
+    }
+
+    .hamburger-button{
+        top: 0.5rem;
+    }
+
+
 }
 
 @media screen and (max-width: 860px){
@@ -130,7 +157,7 @@
     }
 
     .hamburger-button{
-        top: 0.9rem;
+        top: 0.8rem;
         right: 0.8rem;
         height: 18px;
         width: 25px;
