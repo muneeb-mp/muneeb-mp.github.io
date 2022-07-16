@@ -1,0 +1,106 @@
+.projects{
+    background: rgb(56,55,70);
+    background: linear-gradient(90deg, rgba(24,89,102,1) 0%, rgba(36,36,51,1) 73%, rgba(56,55,70,1) 100%);
+    padding: 2em 10em;
+}
+
+.projects h2{
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.p1, .p2{
+    background-color: #fff;
+    margin: 2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.p1:hover, .p2:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.p1 img, .p2 img{
+    width: 100%;
+}
+
+.p1 h3, .p2 h3{
+    padding: 0.3em;
+}
+
+.p1 p, .p2 p{
+    margin: 0.3em 0;
+}
+
+.p1 a, .p2 a{
+    margin-top: 0.3em;
+    padding: 0.3em 0.9em;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #7289da;
+    color: white;
+}
+
+.p1 a:hover, .p2 a:hover{
+    background-color: white;
+    color: #7289da;
+}
+
+@media screen and (max-width:1360px){
+    .projects {
+        padding: 2em 3em;
+    }
+}
+
+@media screen and (max-width:1180px){
+    .projects {
+        padding: 1.5em 2em;
+    }
+    .p1, .p2{
+        margin: 1.5em;
+        padding: 1.5em;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .projects {
+        padding: 1em 1em;
+    }
+    .p1, .p2{
+        margin: 1em;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .projects{
+        padding: 0em;
+    }
+
+    .projects h2{
+        padding-top: 0.5em;
+        font-size: 1.6em;
+    }
+    
+    .project-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .p1 h3, .p2 h3{
+        padding: 0.2em;
+    }
+}
+

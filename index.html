@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muneeb Phansokar - Frontend Web Developer</title>
+
+    <!-- linking css files -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+
+    <!-- Using google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Using font awesome package -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Homepage section with Navbar-->
+    <div class="home-container" id="home-container">
+        <!--------- Navbar --------->
+        <nav class="navbar">
+            <div class="logo">&lt;Muneeb Phansopkar/&gt;</div>
+
+            <!-- Creating toggle button for responsiveness -->
+            <div class="hamburger-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#home-container">&lt;Home/&gt;</a></li>
+                    <li><a href="#about">&lt;About/&gt;</a></li>
+                    <li><a href="#skills">&lt;Skills/&gt;</a></li>
+                    <li><a href="#projects">&lt;Projects/&gt;</a></li>
+                    <li><a href="#contact">&lt;Contact me/&gt;</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--------- Home --------->
+        <div class="container">
+            <div class="intro">
+                <div>
+                    <div id="first-text">Hi, My name is </div>Muneeb Phansopkar <div id="second-text">and I'm a
+                    </div>Frontend Web Developer.
+                    <div id="cv">
+                        <a href="https://drive.google.com/file/d/13eiJkj9B0OtMOVpi9xGKyvY5qnl94VyS/view?usp=sharing" target="_blank">Download CV</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links to social media -->
+            <div class="coding-text">
+                <div>&nbsp;Reach me at --</div>
+
+                <div class="social-links">
+                    <i class="fa-brands fa-github"></i>
+                    <a id="github" href="https://github.com/muneeb-mp/" target="_blank">GitHub --></a>
+                </div>
+                <div class="social-links">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a id="linkedin" href="https://www.linkedin.com/in/muneeb-phansopkar-395b2b99/"
+                        target="_blank">LinkedIn --></a>
+                </div>
+                <div class="social-links">
+                    <i class="fa-brands fa-discord"></i>
+                    <a id="discord" href="#" target="_blank">Macro#9764</a>
+                </div>
+                <div class="social-links">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a id="number" href="#" target="_blank">+918308506190</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <h2><br>&lt;About Me/&gt;</h2>
+        <h5>
+            <p><br><br>Hey there, Welcome to my portfolio. Before learning Web Development i was learning Java but since i started getting familiar with Web Development, I fell absolutely in love with it.<br><br>
+            I love the easy times of coding, but i also loves the hard times when some code makes me so frustrated that i want to pull my hair out. There is something about it, when u finally find a solution to your problem and sit back and take a look at the finished work.</p><br><br><br><hr><br>
+        </h5>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2>&lt;Skills/&gt;</h2><br><br>
+        <div class="icons">
+            <div class="html">
+                <i class="fa-brands fa-html5"></i>
+                <h5>HTML</h5>
+            </div>
+            <div class="css">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h5>CSS</h5>
+            </div>
+            <div class="bootstrap">
+                <i class="fa-brands fa-bootstrap"></i>
+                <h5>Bootstrap</h5>
+            </div>
+            <div class="javascript">
+                <i class="fa-brands fa-js"></i>
+                <h5>JavaScript</h5>
+            </div>
+        </div><br><br>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2>&lt;Projects/&gt;</h2>
+        <div class="project-container">
+            <div class="p1">
+                <img src="img/news-website.png" alt="">
+                <h3>News Website</h3>
+                <p>
+                <div>Show News feed of Top Headlines using gnews.io API</div>
+                <div>Features -</div>
+                <div>- This project was made using AJAX.</div>
+                <div>- Using gnews API to fetch Top 10 Headlines.</div>
+                <div>- Image of article is shown once headline is clicked and A brief summary of what the article is
+                    about.</div>
+                <div>- Responsive design with the help of Bootstrap framework.</div>
+                <div>- Elegant custom card design with Monospace font.</div>
+                </p>
+                <a href="#" target="_blank">View Code</a>
+            </div>
+            <div class="p2">
+                <img src="img/movie-project.png" alt="">
+                <h3>Movie Guide Website</h3>
+                <p>
+                <div>A website to search about your favourite movies.</div>
+                <div>- Beautiful design fully custom made.</div>
+                <div>- Responsive design, use on Mobiles, Tablet, PC.</div>
+                <div>- The API used in this project is https://www.omdbapi.com/</div>
+                <div>- Used Promises to fetch data from the API.</div>
+                </p>
+                <a href="https://github.com/muneeb-mp/Movie-Guide-JS" target="_blank">View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2>&lt;GET IN TOUCH/&gt;</h2>
+            <p>Interested? Submit your info below and i'll get in touch with you</p>
+
+            <form action="https://formsubmit.co/0d20e5fd443f63b0de8ee4bdb75e27cd" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="row">
+                    <div class="column">
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="name" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="column">
+                        <label for="email">Email Id</label>
+                        <input type="email" name="Email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="Subject" id="subject" placeholder="Your Subject here">
+                    </div>
+                    <div class="column">
+                        <label for="contact">Contact Number</label>
+                        <input type="tel" name="Contact" id="contact" placeholder="Your phone number here">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="desc">Description</label>
+                        <textarea name="Description" id="desc" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+            <a href="#home-container">Go to top</a>
+        </div>
+    </section>
+    
+</body>
+<script src="js/navbarToggle.js"></script>
+</html>

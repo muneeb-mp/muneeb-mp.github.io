@@ -1,0 +1,57 @@
+
+.about{
+    background: rgb(165,161,158);
+    background: linear-gradient(90deg, rgba(165,161,158,1) 0%, rgba(177,144,133,1) 33%, rgba(185,73,37,1) 86%); 
+    padding: 2em 20em 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.about h5{
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.about h5 hr{
+    border: 3px solid black;
+}
+
+@media screen and (max-width:1360px){
+    .about{
+        padding: 2em 10em 0 10em;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .about{
+        padding: 1.5em 7em 0 7em;
+    }
+    
+    .about h2{
+        font-size: 1.6em;
+    }
+
+    .about h5{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .about{
+        padding: 1em 2em 0 2em;
+    }
+    
+    .about h2{
+        font-size: 1.6em;
+    }
+
+    .about h5{
+        font-size: 1.1em;
+    }
+}

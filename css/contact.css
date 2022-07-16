@@ -1,0 +1,118 @@
+.contact {
+    background: rgb(165, 161, 158);
+    background: linear-gradient(90deg, rgba(165, 161, 158, 1) 0%, rgba(177, 144, 133, 1) 33%, rgba(185, 73, 37, 1) 86%);
+    padding: 2em 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-container {background: rgb(56,55,70);
+    background: linear-gradient(90deg, rgba(56,55,70,1) 0%, rgba(36,36,51,1) 27%, rgba(24,89,102,1) 100%); 
+    color: white;
+    width: 90%;
+    padding: 1em 3em;
+    border-radius: 0.5em;
+}
+
+.contact .contact-container h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.contact .contact-container p {
+    text-align: center;
+    font-size: 1em;
+    color: #888;
+}
+
+.contact .contact-container a {
+    margin-left: 1.2em;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+form {
+    width: 100%;
+    margin: 1em;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 1em;
+    column-gap: 2em;
+    margin-bottom: 1.2em;
+}
+
+.contact label {
+    font-size: 1em;
+}
+
+.column input,
+textarea {
+    width: 100%;
+    font-weight: 400;
+    padding: 0.5em 0.6em;
+    margin-top: 0.3em;
+    border: 2px solid #c4cae0;
+    border-radius: 0.3em;
+}
+
+.column textarea{
+    resize: none;
+}
+
+.column input:focus, textarea:focus{
+    border-color: black;
+    outline: none;
+}
+
+form button {
+    border: none;
+    padding: 0.6em 1.2em;
+    background-color: #7289da;
+    color: white;
+    border-radius: 0.2em;
+}
+
+form button:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:1360px){
+    .contact {
+        padding: 2em 8em;
+    }
+}
+
+@media screen and (max-width:1180px){
+    .contact {
+        padding: 2em 2em;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .contact {
+        padding: 0.5em 0.5em;
+    }
+
+    .contact .contact-container {
+        width: 98%;
+        padding: 0.3em 1em;
+    }
+
+    .contact .contact-container h2 {
+        padding-top: 0.5em;
+        font-size: 1.6em;
+    }
+
+    .column input,
+    textarea {
+    max-width: 90%;
+    padding: 0.25em 0.3em;
+    margin-top: 0.15em;
+    }
+}

@@ -1,0 +1,142 @@
+:root {
+    --text-shadow: 1px 1px 3px white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: #999; */
+    background: rgb(56,55,70);
+    background: linear-gradient(90deg, rgba(56,55,70,1) 0%, rgba(36,36,51,1) 27%, rgba(24,89,102,1) 100%); 
+    padding: 6em 3em 3em 3em;
+}
+
+.intro {
+    padding: 0 1em;
+    color: #fff;
+    font-size: 4.2em;
+    font-weight: 500;
+    line-height: 1.2em;
+    text-shadow: var(--text-shadow);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 5px solid orange;
+}
+
+.intro #first-text,
+#second-text {
+    font-size: 0.5em;
+    color: #999;
+    text-shadow: none;
+}
+
+#cv a{
+    font-size: 0.3em;
+    padding: 0.5em 1.5em;
+    border-radius: 20px;
+    background-color: #7289da;
+    color: white;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#cv a:hover{
+    color: #7289da;
+    background-color: white;
+}
+
+.coding-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: rgb(205,205,216);
+    background: linear-gradient(90deg, rgba(205,205,216,1) 0%, rgba(173,156,89,1) 51%);
+    border: 5px solid orange;
+    font-size: 1.5em;
+    padding: 1em;
+    line-height: 2em;
+}
+
+.social-links{
+    border: 3px solid orange;
+    padding: 0.3em 1em;
+    margin: 0.3em;
+    width: 95%;
+    background-color: rgb(218, 207, 207);
+}
+
+.social-links a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+@media screen and (max-width:1360px){
+    .intro{
+        font-size: 3.6em;
+    }
+
+    .coding-text{
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width:1180px){
+    .intro{
+        font-size: 3.2em;
+    }
+
+    .coding-text{
+        font-size: 1.2em;
+        padding: 0.6em;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .intro{
+        font-size: 2.6em;
+    }
+
+    .coding-text{
+        font-size: 1em;
+        padding: 0.6em;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5em 1em 1em 1em;
+    }
+    
+    .intro{
+        font-size: 2.6em;
+    }
+
+    .coding-text{
+        font-size: 1em;
+        padding: 0.6em;
+        width: 30em;
+        margin: 2em auto auto auto;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .coding-text {
+        width: 20em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .intro {
+        font-size: 2em;
+    }
+
+    .coding-text {
+        font-size: 0.8em;
+        width: 20em;
+    }
+}
+
