@@ -13,3 +13,7 @@ v1.01 changelog -
 
 v1.02 changelog -
 - Mobile navbar will close automatically now on clicking the navbar menu items.
+
+v1.03 changelog -
+- Added Git to the skills section
+- Removed target attritbute from Discord and number links in Reach me section.
