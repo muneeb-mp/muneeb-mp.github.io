@@ -18,5 +18,5 @@ v1.03 changelog -
 - Added Git to the skills section
 - Removed target attritbute from Discord and number links in Reach me section.
 
-v1.03 changelog -
+v1.03.1 changelog -
 - Skills should show properly on small devices now.
