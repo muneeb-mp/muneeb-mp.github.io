@@ -2,7 +2,6 @@
     background: rgb(165, 161, 158);
     background: linear-gradient(90deg, rgba(165, 161, 158, 1) 0%, rgba(177, 144, 133, 1) 33%, rgba(185, 73, 37, 1) 86%);
     padding: 2em 20em;
-    /* border-top: 3px solid white; */
 }
 
 .skills h2 {
@@ -58,20 +57,22 @@
 
 @media screen and (max-width: 860px) {
     .skills h2{
+        text-align: center;
         font-size: 1.2em;
     }
 
     .icons{
-        font-size: 5em;
+        font-size: 4em;
     }
 }
 
 @media screen and (max-width: 580px) {
     .skills h2{
+        text-align: center;
         font-size: 1.6em;
     }
 
     .icons{
-        font-size: 4em;
+        font-size: 3em;
     }
 }
