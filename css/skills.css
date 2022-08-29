@@ -1,18 +1,18 @@
 .skills {
     background: rgb(165, 161, 158);
     background: linear-gradient(90deg, rgba(165, 161, 158, 1) 0%, rgba(177, 144, 133, 1) 33%, rgba(185, 73, 37, 1) 86%);
-    padding: 2em 20em;
+    padding: 2rem 20rem;
 }
 
 .skills h2 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
     color: white;
 }
 
 .icons {
-    font-size: 8em;
+    font-size: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,18 +23,14 @@
     font-size: 0.2em;
 }
 
-.icons .html,
-.css,
-.bootstrap,
-.javascript,
-.git {
+.icon {
     padding: 0.1em 0.3em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.html:hover, .css:hover, .bootstrap:hover, .javascript:hover, .git:hover{
+.icon:hover{
     transform: scale(1.1);
 }
 
@@ -73,6 +69,6 @@
     }
 
     .icons{
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }
