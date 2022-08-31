@@ -1,0 +1,46 @@
+.top-section {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10vw;
+    border-top: 2px solid #eef1f5;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    gap: 16px;
+}
+
+.footer-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    color: #3b4754;
+    font-weight: 600;
+}
+
+.socials {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.flex-footer {
+    display: flex;
+}
+
+@media screen and (max-width:1100px) {
+    .top-section {
+        padding: 0 3vw;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .topSection {
+        height: 80px;
+    }
+    .footer-list {
+        display: none;
+    }
+}

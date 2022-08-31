@@ -1,4 +1,5 @@
 # muneeb-mp.github.io
+
 My Portfolio Website fully custom made with HTML, CSS, JavaScript.
 
 - Portfolio website for some of my skills showcase.
@@ -6,7 +7,10 @@ My Portfolio Website fully custom made with HTML, CSS, JavaScript.
 - Fully Custom design made by myself.
 - Hamburger menu for mobiles and tablets.
 
-Changelogs - 
+Changelogs -
+
+v2.0 -
+- Complete new design with a focus on KISS (Keep It Simple Stupid).
 
 v1.01 -
 - Adjusted the position of navbar menu (hamburger) on mobile devices.

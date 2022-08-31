@@ -1,57 +1,127 @@
-
-.about{
-    background: rgb(165,161,158);
-    background: linear-gradient(90deg, rgba(165,161,158,1) 0%, rgba(177,144,133,1) 33%, rgba(185,73,37,1) 86%); 
-    padding: 2em 20em 0 20em;
+.container {
+    max-width: 1000px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 48px;
 }
 
-.about h2{
-    font-size: 2em;
-    font-weight: 700;
+.section-heading {
+    text-transform: uppercase;
+    font-size: 44px;
+    letter-spacing: 3px;
+    position: relative;
 }
 
-.about h5{
-    font-size: 1.3em;
+.section-heading::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 7px;
+    background: rgb(252, 226, 81);
+    transform: skew(-18deg) translateX(-50%);
+    left: 50%;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 76px;
+}
+
+.about-info {
+    font-size: 18px;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    color: #444e5a;
 }
 
-.about h5 hr{
-    border: 3px solid black;
+.about-info p {
+    line-height: 1.5em;
 }
 
-@media screen and (max-width:1360px){
-    .about{
-        padding: 2em 10em 0 10em;
+strong {
+    font-weight: bolder;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.about-skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+.skillBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: #444e5a;
+    font-size: 18px;
+}
+
+.skillIcon {
+    height: 50px;
+    filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.2));
+}
+
+.skillIcon:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+@media screen and (max-width: 880px){
+    .about-grid {
+        grid-template-columns: auto;
+        gap: 24px;
+    }
+    .about-skills {
+        margin-top: 48px;
     }
 }
 
-@media screen and (max-width: 860px){
-    .about{
-        padding: 1.5em 7em 0 7em;
-    }
-    
-    .about h2{
-        font-size: 1.6em;
-    }
 
-    .about h5{
-        font-size: 1.1em;
+@media (max-width: 480px) {
+    .container {
+        gap: 24px;
+    }
+    .section-heading {
+        font-size: 32px;
+    }
+    #contactButton {
+        display: none;
+    }
+    .about-skills {
+        gap: 16px;
+        margin-top: 48px;
+    }
+    .skillBox {
+        font-size: 16px;
+        gap: 8px;
+    }
+    .skillIcon {
+        max-height: 30px;
     }
 }
 
-@media screen and (max-width: 580px){
-    .about{
-        padding: 1em 2em 0 2em;
-    }
-    
-    .about h2{
-        font-size: 1.6em;
-    }
 
-    .about h5{
-        font-size: 1.1em;
-    }
-}
+
