@@ -15,3 +15,16 @@ document.addEventListener("click", (e) => {
     navbarLinks.classList.toggle("active");
   }
 });
+
+// Code for active menu on scroll
+const li = document.querySelectorAll(".nav-listItem");
+const section = document.querySelectorAll("section");
+
+function activeMenu() {
+  let len = section.length;
+  while (--len && window.scrollY + 97 < section[len].offsetTop) {}
+  li.forEach((link) => link.classList.remove("activeNav"));
+  li[len].classList.add("activeNav");
+}
+activeMenu();
+window.addEventListener("scroll", activeMenu);

@@ -45,6 +45,10 @@
     background: var(--muted-btn-color);
 }
 
+.activeNav {
+    background: var(--btn-color);
+}
+
 .resume {
     padding: 6px 12px;
     background: var(--btn-color);
