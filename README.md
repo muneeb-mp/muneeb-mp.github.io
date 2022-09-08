@@ -11,6 +11,11 @@ Live Link - https://muneeb-mp.github.io/
 
 Changelogs -
 
+v2.1.1 -
+- Updated resume links.
+- Added new project in project section.
+- Removed page section links from footer (can always access them from Navbar).
+
 v2.1 -
 - Skills now displayed through a local JSON file. This will avoid repetition of the HTML code.
 - Footer layout improvements for mobile devices.
