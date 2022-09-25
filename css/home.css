@@ -66,7 +66,7 @@ body {
     align-items: center;
     border-radius: 0.4rem;
     color: black;
-    background: rgb(252, 226, 81);
+    background: var(--btn-color);
     border: none;
     box-shadow: 3px 3px 0 0 var(--muted-text);
     font-weight: 600;

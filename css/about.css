@@ -29,7 +29,7 @@
 
 .about-grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1.5fr 2fr;
     gap: 76px;
 }
 

@@ -10,6 +10,11 @@
         "altTitle" : "css3"
     },
     {
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+        "name" : "Sass",
+        "altTitle" : "sass"
+    },
+    {
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
         "name" : "Bootstrap",
         "altTitle" : "bootstrap"
@@ -23,6 +28,11 @@
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         "name" : "JavaScript",
         "altTitle" : "javascript"
+    },
+    {
+        "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "name" : "TypeScript",
+        "altTitle" : "typescript"
     },
     {
         "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
