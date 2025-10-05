@@ -7,7 +7,7 @@ import {
   Zap,
 } from "lucide-react";
 import { motion } from "motion/react";
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 import { NAME, TITLE } from "@/lib/constants";
 
 interface Props {
@@ -18,7 +18,7 @@ const Hero = ({ scrollToSection }: Props) => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative z-20 bg-gradient-to-br from-background via-background to-secondary/20"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative z-20 bg-gradient-to-br from-background via-background to-secondary/20 scroll-m-8"
     >
       <motion.div
         className="max-w-7xl mx-auto text-center"
@@ -28,12 +28,12 @@ const Hero = ({ scrollToSection }: Props) => {
       >
         <div className="text-center mx-auto">
           <motion.h1
-            className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent"
+            className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Hi, I'm <span className="text-purple-700">{NAME}</span>
+            Hi, I'm <span>{NAME}</span>
           </motion.h1>
           <motion.h2
             className="text-xl sm:text-3xl lg:text-4xl text-muted-foreground mb-8 font-light"

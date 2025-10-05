@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Skills from "./components/skills";
+import Portfolio from "./components/portfolio";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
-  const [scrollY, setScrollY] = useState(0);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -20,7 +22,6 @@ function App() {
     const handleScroll = () => {
       const sections = ["hero", "skills", "experience", "portfolio", "contact"];
       const scrollPosition = window.scrollY + 100;
-      setScrollY(window.scrollY);
 
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -47,10 +48,12 @@ function App() {
         setIsMenuOpen={setIsMenuOpen}
         scrollToSection={scrollToSection}
         activeSection={activeSection}
-        setActiveSection={setActiveSection}
       />
       <Hero scrollToSection={scrollToSection} />
       <Skills />
+      <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 }

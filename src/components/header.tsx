@@ -1,21 +1,21 @@
 import { Code2, Menu } from "lucide-react";
 import { motion } from "motion/react";
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetTitle,
   SheetTrigger,
-} from "../ui/sheet";
-import { Separator } from "../ui/separator";
+} from "./ui/sheet";
+import { Separator } from "./ui/separator";
 import { NAME, TITLE } from "@/lib/constants";
+import { headerMenu } from "@/assets/data/menu";
 
 interface Props {
   isMenuOpen: boolean;
   setIsMenuOpen: (value: boolean) => void;
   activeSection: string;
-  setActiveSection: (value: string) => void;
   scrollToSection: (sectionId: string) => void;
 }
 
@@ -24,7 +24,6 @@ const Header = ({
   setIsMenuOpen,
   scrollToSection,
   activeSection,
-  setActiveSection,
 }: Props) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80 border-b border-border/50">
@@ -40,22 +39,15 @@ const Header = ({
             whileHover={{ scale: 1.05 }}
           >
             <Code2 className="text-primary" size={24} />
-            <span>Portfolio</span>
+            <span>{NAME}</span>
           </motion.div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {[
-              { name: "Home", id: "hero" },
-              { name: "Skills", id: "skills" },
-              { name: "Experience", id: "experience" },
-              { name: "Portfolio", id: "portfolio" },
-              { name: "Contact", id: "contact" },
-            ].map((item) => (
+            {headerMenu.map((item) => (
               <motion.button
                 key={item.id}
                 onClick={() => {
-                  setActiveSection(item.id);
                   scrollToSection(item.id);
                 }}
                 className={`relative hover:text-primary transition-colors ${
@@ -100,13 +92,7 @@ const Header = ({
                   </div>
                   <Separator />
                   <nav className="flex flex-col space-y-4">
-                    {[
-                      { name: "Home", id: "hero" },
-                      { name: "Skills", id: "skills" },
-                      { name: "Experience", id: "experience" },
-                      { name: "Portfolio", id: "portfolio" },
-                      { name: "Contact", id: "contact" },
-                    ].map((item) => (
+                    {headerMenu.map((item) => (
                       <motion.div key={item.id} whileHover={{ x: 5 }}>
                         <Button
                           variant="ghost"
