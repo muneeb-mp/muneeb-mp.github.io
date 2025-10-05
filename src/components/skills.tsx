@@ -43,7 +43,7 @@ const Skills = () => {
 
           <div>
             <motion.div
-              className="flex flex-wrap justify-center gap-12 max-w-4xl mx-auto"
+              className="flex flex-wrap justify-center gap-6 md:gap-12 max-w-4xl mx-auto"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -62,9 +62,9 @@ const Skills = () => {
                     src={skill.image}
                     alt={skill.altTitle}
                     title={skill.altTitle}
-                    className="h-12"
+                    className="h-6 md:h-12"
                   />
-                  <span>{skill.name}</span>
+                  <span className="text-xs md:text-sm">{skill.name}</span>
                 </motion.div>
               ))}
             </motion.div>
