@@ -1,4 +1,4 @@
-import { NAME } from "@/lib/constants";
+import { EMAIL, NAME, URL_GITHUB, URL_LINKEDIN } from "@/lib/constants";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -16,9 +16,9 @@ const Footer = () => {
           <p className="text-muted-foreground">{NAME}</p>
           <div className="flex justify-center gap-3">
             {[
-              { icon: Github, href: "#" },
-              { icon: Linkedin, href: "#" },
-              { icon: Mail, href: "#" },
+              { icon: Github, href: URL_GITHUB },
+              { icon: Linkedin, href: URL_LINKEDIN },
+              { icon: Mail, href: `mailto:${EMAIL}` },
             ].map((social, index) => (
               <motion.a
                 key={index}

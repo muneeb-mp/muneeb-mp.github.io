@@ -5,6 +5,7 @@ import { Badge } from "./ui/badge";
 import { projects } from "@/assets/data/projects";
 import { Card, CardContent } from "./ui/card";
 import { ImageWithFallback } from "./figma/image-with-fallback";
+import { URL_GITHUB } from "@/lib/constants";
 
 const Portfolio = () => {
   return (
@@ -53,36 +54,40 @@ const Portfolio = () => {
 
                     {/* Quick Action Buttons - Overlay */}
                     <div className="absolute top-3 right-3 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <Button
-                          size="sm"
-                          variant="secondary"
-                          className="h-8 w-8 p-0 bg-white/90 hover:bg-white"
-                          asChild
+                      {project.github && (
+                        <motion.div
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
                         >
-                          <a href={project.github}>
-                            <Github size={14} />
-                          </a>
-                        </Button>
-                      </motion.div>
-                      <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <Button
-                          size="sm"
-                          variant="secondary"
-                          className="h-8 w-8 p-0 bg-white/90 hover:bg-white"
-                          asChild
+                          <Button
+                            size="sm"
+                            variant="secondary"
+                            className="h-8 w-8 p-0 bg-white/90 hover:bg-white"
+                            asChild
+                          >
+                            <a href={project.github}>
+                              <Github size={14} />
+                            </a>
+                          </Button>
+                        </motion.div>
+                      )}
+                      {project.live && (
+                        <motion.div
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
                         >
-                          <a href={project.live}>
-                            <ExternalLink size={14} />
-                          </a>
-                        </Button>
-                      </motion.div>
+                          <Button
+                            size="sm"
+                            variant="secondary"
+                            className="h-8 w-8 p-0 bg-white/90 hover:bg-white"
+                            asChild
+                          >
+                            <a href={project.live}>
+                              <ExternalLink size={14} />
+                            </a>
+                          </Button>
+                        </motion.div>
+                      )}
                     </div>
 
                     {/* Project Title Overlay */}
@@ -141,7 +146,11 @@ const Portfolio = () => {
               className="bg-card/90 backdrop-blur-sm border-border/50 hover:border-primary/30 hover:bg-primary/5 group"
               asChild
             >
-              <a href="#" className="flex items-center space-x-3">
+              <a
+                href={URL_GITHUB}
+                target="_blank"
+                className="flex items-center space-x-3"
+              >
                 <Github
                   className="text-muted-foreground group-hover:text-primary transition-colors"
                   size={20}

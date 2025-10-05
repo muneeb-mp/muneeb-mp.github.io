@@ -1,34 +1,32 @@
 import { motion } from "motion/react";
 import { Card, CardContent } from "./ui/card";
-import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { TypingText } from "./typing-text";
+import { contacts } from "@/assets/data/contact";
 
 const Contact = () => {
-  const contacts = [
-    {
-      icon: Mail,
-      text: "muneeb.phansopkar@gmail.com",
-      href: "mailto:muneeb.phansopkar@gmail.com",
-    },
-    {
-      icon: Github,
-      text: "github.com/muneeb-mp",
-      href: "https://github.com/muneeb-mp",
-    },
-    {
-      icon: Linkedin,
-      text: "linkedin.com/in/muneeb-phansopkar",
-      href: "https://linkedin.com/in/muneeb-phansopkar-395b2b99",
-    },
-  ];
-
   return (
     <section
       id="contact"
-      className="py-12 px-4 sm:px-6 lg:px-8 relative z-20 bg-gradient-to-br from-secondary/20 to-primary/5 backdrop-blur-sm scroll-mt-[68px]"
+      className="py-12 px-4 sm:px-6 lg:px-8 relative z-20 bg-gradient-to-br from-secondary/20 to-primary/5 backdrop-blur-sm scroll-m-8"
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="text-center mb-8"
+      >
+        <h2 className="text-3xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
+          Get In Touch
+        </h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          I'm always open to discussing new opportunities and interesting
+          projects. Let’s connect and create something amazing together!
+        </p>
+      </motion.div>
+
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center overflow-hidden">
         {/* --- LEFT: Title & Description --- */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -36,13 +34,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-            Get In Touch
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            I'm always open to discussing new opportunities and interesting
-            projects. Let’s connect and create something amazing together!
-          </p>
+          <img src="/svg/contact.svg" alt="Contact Illustration" />
         </motion.div>
 
         {/* --- RIGHT: Contact Info Card --- */}
@@ -62,7 +54,6 @@ const Contact = () => {
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ x: 10, scale: 1.02 }}
-                  className="overflow-hidden"
                 >
                   <Button
                     variant="ghost"

@@ -1,40 +1,47 @@
 import { motion } from "motion/react";
 import { Briefcase } from "lucide-react";
-
-const experiences = [
-  {
-    role: "Team Lead - Front End Development",
-    duration: "Dec 2021 – Present · 3 yrs 11 mos",
-    skills: "MERN Stack, Next.js and +8 skills",
-  },
-  {
-    role: "Full-stack Developer",
-    duration: "Oct 2019 – Dec 2021 · 2 yrs 3 mos",
-    skills: "React.js, Node.js and +6 skills",
-  },
-  {
-    role: "Intern - Frontend Developer",
-    duration: "Apr 2019 – Oct 2019 · 7 mos",
-    skills: "HTML, CSS, JavaScript, React",
-  },
-];
+import { experiences } from "@/assets/data/experience";
+import { Card, CardContent } from "./ui/card";
 
 const ExperienceTimeline = () => {
   return (
     <section
       id="experience"
-      className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/20 to-primary/5 backdrop-blur-sm"
+      className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/20 to-primary/5 backdrop-blur-sm scroll-m-8"
     >
-      <div className="max-w-4xl mx-auto overflow-hidden">
-        <motion.h2
-          className="text-3xl sm:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent"
+      <div className="max-w-5xl mx-auto overflow-hidden md:flex md:gap-4 md:justify-between">
+        <motion.div
+          className="mx-auto"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Experience
-        </motion.h2>
+          {/* Title */}
+          <h2 className="text-3xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
+            Experience
+          </h2>
+
+          {/* Pointer List */}
+          <p className="text-lg text-muted-foreground leading-relaxed mb-3">
+            I am a MERN stack developer with expertise in:
+          </p>
+          <div className="flex flex-col gap-2 mb-16 md:mb-0">
+            {[
+              "Full-stack apps with React, Node.js, Express.js",
+              "Serverless solutions with AWS Lambdas",
+              "Responsive UI/UX design",
+              "SEO optimization for search engines",
+            ].map((point, i) => (
+              <Card key={i} className="p-2 hover:shadow-lg transition-shadow">
+                <CardContent className="flex items-center gap-2 px-2">
+                  <span className="text-primary">★</span>
+                  <p className="text-muted-foreground text-sm">{point}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </motion.div>
 
         <div className="relative ml-3 sm:ml-4">
           {experiences.map((exp, index) => (
@@ -56,7 +63,7 @@ const ExperienceTimeline = () => {
               {/* Timeline Dot */}
               <span className="absolute left-0 top-2 w-3.5 h-3.5 rounded-full bg-primary border-4 border-background" />
 
-              <div className="relative bg-card/30 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-border/30 hover:bg-card/60 transition-colors">
+              <div className="relative rounded-lg">
                 <h3 className="text-lg font-semibold text-foreground">
                   {exp.role}
                 </h3>
