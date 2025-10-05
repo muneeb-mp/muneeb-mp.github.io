@@ -62,6 +62,7 @@ const Contact = () => {
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ x: 10, scale: 1.02 }}
+                  className="overflow-hidden"
                 >
                   <Button
                     variant="ghost"

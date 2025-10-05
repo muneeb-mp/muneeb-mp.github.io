@@ -1,32 +1,45 @@
 export const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Rick and Morty Wiki",
     description:
-      "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-    image:
-      "https://images.unsplash.com/photo-1692699203597-b5a4464f3f9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3QlMjBtb2NrdXB8ZW58MXx8fHwxNzU5MzA1ODA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    github: "#",
-    live: "#",
+      "React.JS project to search all information about Rick and Morty show. Browse through Characters, Episodes or Location with each page having respective filters.",
+    image: "/rick-and-morty.png",
+    technologies: ["React", "Bootstrap", "Sass"],
+    github: "https://github.com/muneeb-mp/Rick-And-Morty-Wiki-Reactjs",
+    live: "https://rick-and-morty-wiki-react-js.netlify.app/",
   },
   {
-    title: "Task Management App",
+    title: "Pine Restaurant Management",
     description:
-      "A mobile-first task management application with real-time collaboration features, drag-and-drop functionality, and progress tracking.",
-    image:
-      "https://images.unsplash.com/photo-1707836916010-3c4ad261936c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBzY3JlZW58ZW58MXx8fHwxNzU5MzE0Njg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    technologies: ["React Native", "Firebase", "TypeScript"],
-    github: "#",
-    live: "#",
+      "This Project's inspiration is my local Pine Restaurant located in Mazgaon, Mumbai. Browse through Popular food, Special Combos, and Restaurant menus.",
+    image: "/pine-restaurant.png",
+    technologies: ["Html5", "Css3", "Sass", "Javascript"],
+    github: "https://github.com/muneeb-mp/Pine-Restaurant-JS",
+    live: "https://pine-restaurant-management-js.netlify.app/",
   },
   {
-    title: "Analytics Dashboard",
+    title: "Github Profile Finder",
     description:
-      "A comprehensive analytics dashboard for business intelligence with interactive charts, real-time data visualization, and export capabilities.",
-    image:
-      "https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzU5MzU4Nzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    technologies: ["Next.js", "D3.js", "PostgreSQL", "Docker"],
-    github: "#",
-    live: "#",
+      "Shows all of Github user's profile information and repositories in a beautiful layout. Neon-themed Fully custom and Responsive CSS design.",
+    image: "/github-profile-finder.png",
+    technologies: ["Html5", "Css3", "Sass", "Javascript"],
+    github: "https://github.com/muneeb-mp/GitHub-Profile-Finder-JS",
+    live: "https://github-profile-finder-javascript.netlify.app/",
+  },
+  {
+    title: "Newsfeed Portal Website",
+    description:
+      "Show News feed of Top Headlines using gnews.io API. Responsive custom design with Grid layout.",
+    image: "/news-website.png",
+    technologies: ["Html5", "Css3", "Sass", "Javascript"],
+    github: "https://github.com/muneeb-mp/Newsfeed-Portal-JS",
+  },
+  {
+    title: "Movie Guide Website",
+    description:
+      "A website to search about your favourite movies. Responsive design, use on Mobiles, Tablet, PC.",
+    image: "/movie-project.png",
+    technologies: ["Html5", "Css3", "Sass", "Javascript"],
+    github: "https://github.com/muneeb-mp/Movie-Guide-JS",
   },
 ];
