@@ -31,7 +31,11 @@ export const TypingText = ({
   }, [isInView, text, delay, speed]);
 
   return (
-    <span ref={ref} className="inline-block">
+    <span
+      ref={ref}
+      className="inline-block"
+      style={{ minWidth: `${text.length}ch` }}
+    >
       {displayedText}
     </span>
   );
