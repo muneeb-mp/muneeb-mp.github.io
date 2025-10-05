@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import { Briefcase } from "lucide-react";
 import { experiences } from "@/assets/data/experience";
-import { Card, CardContent } from "./ui/card";
 
 const ExperienceTimeline = () => {
   return (
@@ -33,12 +32,10 @@ const ExperienceTimeline = () => {
               "Responsive UI/UX design",
               "SEO optimization for search engines",
             ].map((point, i) => (
-              <Card key={i} className="p-2 hover:shadow-lg transition-shadow">
-                <CardContent className="flex items-center gap-2 px-2">
-                  <span className="text-primary">★</span>
-                  <p className="text-muted-foreground text-sm">{point}</p>
-                </CardContent>
-              </Card>
+              <div key={i} className="flex items-center gap-2 px-2">
+                <span className="text-primary">★</span>
+                <p className="text-accent-foreground text-sm">{point}</p>
+              </div>
             ))}
           </div>
         </motion.div>

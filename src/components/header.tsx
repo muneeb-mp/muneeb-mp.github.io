@@ -26,10 +26,10 @@ const Header = ({
   activeSection,
 }: Props) => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80 border-b border-border/50 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-white/10 dark:bg-black/20 backdrop-blur-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] supports-[backdrop-filter]:backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="flex justify-between items-center py-4"
+          className="flex justify-between items-center py-2 md:py-4"
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.6 }}
@@ -91,11 +91,13 @@ const Header = ({
                     <p className="text-sm text-muted-foreground">{TITLE}</p>
                   </div>
                   <Separator />
-                  <nav className="flex flex-col space-y-4">
+                  <nav className="flex flex-col space-y-4 px-2">
                     {headerMenu.map((item) => (
                       <motion.div key={item.id} whileHover={{ x: 5 }}>
                         <Button
-                          variant="ghost"
+                          variant={
+                            activeSection === item.id ? "fushia" : "ghost"
+                          }
                           className="w-full justify-start"
                           onClick={() => scrollToSection(item.id)}
                         >

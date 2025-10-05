@@ -2,6 +2,7 @@ import { ExternalLink, Github, Linkedin, Mail, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import { Button } from "./ui/button";
 import { EMAIL, NAME, TITLE, URL_GITHUB, URL_LINKEDIN } from "@/lib/constants";
+import { TypingText } from "./typing-text";
 
 interface Props {
   scrollToSection: (sectionId: string) => void;
@@ -11,7 +12,7 @@ const Hero = ({ scrollToSection }: Props) => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center flex-col-reverse md:flex-row justify-center gap-4 px-4 sm:px-6 lg:px-8 relative z-20 bg-gradient-to-br from-background via-background to-secondary/20 pt-20 pb-8 md:mt-0 bg-fuchsia-500"
+      className="min-h-screen flex items-center flex-col-reverse md:flex-row justify-center gap-4 px-4 sm:px-6 lg:px-8 relative z-20 bg-gradient-to-br from-background via-background to-secondary/20 pt-20 pb-8 md:mt-0"
     >
       <div>
         <div className="text-center md:text-start mx-auto">
@@ -21,7 +22,10 @@ const Hero = ({ scrollToSection }: Props) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Hi, I'm <span>{NAME}</span>
+            Hi, I'm{" "}
+            <span className="text-fuchsia-700">
+              <TypingText text={NAME} delay={500} speed={100} />
+            </span>
           </motion.h1>
           <motion.h2
             className="text-xl sm:text-3xl lg:text-4xl text-muted-foreground mb-4 md:mb-8 font-light"
@@ -29,7 +33,7 @@ const Hero = ({ scrollToSection }: Props) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            {TITLE}
+            <TypingText text={TITLE} delay={500} speed={100} />
           </motion.h2>
           <motion.p
             className="text-sm sm:text-xl text-muted-foreground mb-6 md:mb-12 leading-relaxed max-w-2xl mx-auto"
@@ -46,7 +50,7 @@ const Hero = ({ scrollToSection }: Props) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
-            className="flex justify-center md:hidden mb-6"
+            className="flex justify-center md:hidden mb-8 md:mb-0"
           >
             <img
               src="/svg/hero.svg"
@@ -56,7 +60,7 @@ const Hero = ({ scrollToSection }: Props) => {
           </motion.div>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start mb-6 md:mb-12"
+            className="flex md:flex-row gap-2 md:gap-6 justify-center md:justify-start mb-6 md:mb-12"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
